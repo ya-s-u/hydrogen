@@ -35,20 +35,6 @@ jobs:
       - name: Build the code
         run: yarn build --force
 
-      - name: Check formatting
-        run: yarn format:check
-
-      - name: Lint the framework code
-        run: yarn lint
-
-      - name: Lint the template code
-        run: yarn lint
-        working-directory: ./templates/demo-store
-
-      - name: Type check hydrogen-ui
-        run: yarn typecheck
-        working-directory: ./packages/hydrogen-ui
-
       - name: Run the unit tests
         run: yarn test
 
