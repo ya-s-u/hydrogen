@@ -37,6 +37,8 @@ export default function Index() {
         </Suspense>
       </Suspense>
 
+      <p>{'マルチバイト'.repeat(28)}</p>
+
       <footer>footer!</footer>
     </>
   );
