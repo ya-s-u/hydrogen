@@ -152,7 +152,6 @@ export default async function testCases({
       `<meta data-flight="${htmlEncode('S1:"react.suspense"')}`
     );
     expect(body).toContain('<div c="5">');
-    expect(body).toContain('マルチバイト'.repeat(28));
     expect(body).toContain('>footer!<');
   });
 
