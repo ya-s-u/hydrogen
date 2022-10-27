@@ -37,7 +37,9 @@ export default function Index() {
         </Suspense>
       </Suspense>
 
-      <p>{'マルチバイト'.repeat(100)}</p>
+      <Suspense fallback={null}>
+        <p>{'マルチバイト'.repeat(100)}</p>
+      </Suspense>
 
       <footer>footer!</footer>
     </>
